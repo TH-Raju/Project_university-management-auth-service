@@ -6,9 +6,10 @@
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "lint:fix": "eslint --fix",
+    "lint:fix": "eslint . --fix",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint-prettier": "yarn link:check && yarn prettier:check",
+    "prettier:fix": "prettier --write .",
+    "lint-prettier": "yarn lint:check && yarn prettier:check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "TH-Raju",
@@ -21,17 +22,22 @@
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
     "@types/cors": "^2.8.13",
-    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.7",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "eslint": "^8.41.0",
     "express": "^4.18.2",
     "mongoose": "^7.2.1",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "react-scripts": "^5.0.1",
+    "winston": "^3.9.0",
+    "winston-daily-rotate-file": "^4.7.1",
+    "zod": "^3.21.4"
   }
 }
