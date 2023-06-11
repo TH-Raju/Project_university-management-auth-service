@@ -1,0 +1,35 @@
+Sun Jun 11 2023 21:35:5 [ph] error: globalErrorHandler [
+  {
+    "code": "invalid_type",
+    "expected": "number",
+    "received": "string",
+    "path": [
+      "body",
+      "year"
+    ],
+    "message": "Expected number, received string"
+  },
+  {
+    "expected": "'01' | '02' | '03'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "code"
+    ],
+    "message": "Required"
+  }
+]
+Sun Jun 11 2023 21:35:23 [ph] error: globalErrorHandler [
+  {
+    "expected": "'01' | '02' | '03'",
+    "received": "undefined",
+    "code": "invalid_type",
+    "path": [
+      "body",
+      "code"
+    ],
+    "message": "Required"
+  }
+]
+Sun Jun 11 2023 21:38:11 [ph] error: globalErrorHandler Unexpected number in JSON at position 50
