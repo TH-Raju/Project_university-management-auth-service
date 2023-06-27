@@ -23,14 +23,6 @@ const createStudent = async (
   student: IStudent,
   user: IUser
 ): Promise<IUser | null> => {
-  // auto generated incremental id
-
-  // const academicSemester = {
-  //   code: '01',
-  //   year: '2025'
-  // }
-  // const id = await generateFacultyId();
-
   // user.id = id;
   // default password
 
